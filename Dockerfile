@@ -6,7 +6,7 @@
             /usr/bin/ssh-keygen -A && \
             groupadd sshgroup && \
             useradd -ms /bin/bash -g sshgroup sshuser && \
-            echo 'sshuser:PASSWORD' | chpasswd && \
+            echo 'sshuser:passw0rd' | chpasswd && \
             mkdir $home/.ssh && \
             touch $home/.ssh/authorized_keys && \
             chown sshuser:sshgroup $home/.ssh/authorized_keys && \
